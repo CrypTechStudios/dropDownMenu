@@ -14,7 +14,6 @@
 		E0B65F7F18AFC98700DC46A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B65F7E18AFC98700DC46A8 /* main.m */; };
 		E0B65F8318AFC98700DC46A8 /* ddmAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B65F8218AFC98700DC46A8 /* ddmAppDelegate.m */; };
 		E0B65F8618AFC98700DC46A8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B65F8418AFC98700DC46A8 /* Main_iPhone.storyboard */; };
-		E0B65F8918AFC98700DC46A8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B65F8718AFC98700DC46A8 /* Main_iPad.storyboard */; };
 		E0B65F8C18AFC98700DC46A8 /* ddmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B65F8B18AFC98700DC46A8 /* ddmViewController.m */; };
 		E0B65F8E18AFC98700DC46A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B65F8D18AFC98700DC46A8 /* Images.xcassets */; };
 		E0B65F9518AFC98800DC46A8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B65F9418AFC98800DC46A8 /* XCTest.framework */; };
@@ -23,6 +22,8 @@
 		E0B65F9F18AFC98800DC46A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B65F9D18AFC98800DC46A8 /* InfoPlist.strings */; };
 		E0B65FA118AFC98800DC46A8 /* dropDownMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B65FA018AFC98800DC46A8 /* dropDownMenuTests.m */; };
 		E0B65FB218AFCC2800DC46A8 /* dropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B65FB118AFCC2800DC46A8 /* dropDownMenu.m */; };
+		E0B65FB818B1813400DC46A8 /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B65FB618B1813300DC46A8 /* select.png */; };
+		E0B65FB918B1813400DC46A8 /* selectButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B65FB718B1813400DC46A8 /* selectButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		E0B65F8118AFC98700DC46A8 /* ddmAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddmAppDelegate.h; sourceTree = "<group>"; };
 		E0B65F8218AFC98700DC46A8 /* ddmAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ddmAppDelegate.m; sourceTree = "<group>"; };
 		E0B65F8518AFC98700DC46A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		E0B65F8818AFC98700DC46A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		E0B65F8A18AFC98700DC46A8 /* ddmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ddmViewController.h; sourceTree = "<group>"; };
 		E0B65F8B18AFC98700DC46A8 /* ddmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ddmViewController.m; sourceTree = "<group>"; };
 		E0B65F8D18AFC98700DC46A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		E0B65FA018AFC98800DC46A8 /* dropDownMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dropDownMenuTests.m; sourceTree = "<group>"; };
 		E0B65FB018AFCC2800DC46A8 /* dropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dropDownMenu.h; sourceTree = "<group>"; };
 		E0B65FB118AFCC2800DC46A8 /* dropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dropDownMenu.m; sourceTree = "<group>"; };
+		E0B65FB618B1813300DC46A8 /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
+		E0B65FB718B1813400DC46A8 /* selectButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,6 @@
 				E0B65F8118AFC98700DC46A8 /* ddmAppDelegate.h */,
 				E0B65F8218AFC98700DC46A8 /* ddmAppDelegate.m */,
 				E0B65F8418AFC98700DC46A8 /* Main_iPhone.storyboard */,
-				E0B65F8718AFC98700DC46A8 /* Main_iPad.storyboard */,
 				E0B65F8A18AFC98700DC46A8 /* ddmViewController.h */,
 				E0B65F8B18AFC98700DC46A8 /* ddmViewController.m */,
 				E0B65F8D18AFC98700DC46A8 /* Images.xcassets */,
@@ -162,10 +163,20 @@
 		E0B65FAF18AFCBA200DC46A8 /* dropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				E0B65FB518B1811200DC46A8 /* images */,
 				E0B65FB018AFCC2800DC46A8 /* dropDownMenu.h */,
 				E0B65FB118AFCC2800DC46A8 /* dropDownMenu.m */,
 			);
 			name = dropDownMenu;
+			sourceTree = "<group>";
+		};
+		E0B65FB518B1811200DC46A8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E0B65FB618B1813300DC46A8 /* select.png */,
+				E0B65FB718B1813400DC46A8 /* selectButton.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0B65F8918AFC98700DC46A8 /* Main_iPad.storyboard in Resources */,
 				E0B65F8E18AFC98700DC46A8 /* Images.xcassets in Resources */,
+				E0B65FB818B1813400DC46A8 /* select.png in Resources */,
 				E0B65F8618AFC98700DC46A8 /* Main_iPhone.storyboard in Resources */,
 				E0B65F7D18AFC98700DC46A8 /* InfoPlist.strings in Resources */,
+				E0B65FB918B1813400DC46A8 /* selectButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +319,6 @@
 				E0B65F8518AFC98700DC46A8 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		E0B65F8718AFC98700DC46A8 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0B65F8818AFC98700DC46A8 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		E0B65F9D18AFC98800DC46A8 /* InfoPlist.strings */ = {
@@ -411,6 +415,7 @@
 				GCC_PREFIX_HEADER = "dropDownMenu/dropDownMenu-Prefix.pch";
 				INFOPLIST_FILE = "dropDownMenu/dropDownMenu-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -424,6 +429,7 @@
 				GCC_PREFIX_HEADER = "dropDownMenu/dropDownMenu-Prefix.pch";
 				INFOPLIST_FILE = "dropDownMenu/dropDownMenu-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

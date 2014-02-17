@@ -15,6 +15,6 @@
 @property (nonatomic, strong) NSString *selection;
 @property (nonatomic, strong) NSString *menuName;
 
-- (UIView *)showMenu:(NSString *)name withItems:(NSArray *)items atPosition:(CGPoint)pos;
+- (UIView *)showMenu:(NSString *)name withItems:(NSArray *)items atPosition:(CGRect)pos;
 
 @end

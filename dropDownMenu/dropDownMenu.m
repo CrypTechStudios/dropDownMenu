@@ -28,16 +28,16 @@
     // Drawing code
 }
 */
-- (UIView *)showMenu:(NSString *)name withItems:(NSArray *)items atPosition:(CGPoint)pos {
+- (UIView *)showMenu:(NSString *)name withItems:(NSArray *)items atPosition:(CGRect)pos {
     menuName = name;
     menuItems = [[NSArray alloc] initWithArray:items];
-    NSLog(@"showmenu hit");
+
     //set origin
     
-    CGRect newFrame = CGRectMake(0, 0, 0, 0);
+    CGRect newFrame = pos;
     newFrame.size.height = [menuItems count] * 44;
-    newFrame.size.width = 100;
-    newFrame.origin = CGPointMake(pos.x, pos.y);
+    newFrame.size.width = (newFrame.size.width - 30);
+//    newFrame.origin = CGPointMake(pos.x, pos.y);
     
     menuTableView = [[UITableView alloc] initWithFrame:newFrame style:UITableViewStylePlain];
     menuTableView.dataSource = self;
