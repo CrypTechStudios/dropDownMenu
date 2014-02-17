@@ -9,7 +9,12 @@
 #import "dropDownMenu.h"
 
 @implementation dropDownMenu
-@synthesize selection, menuName;
+@synthesize delegate, selection;
+
+- (id)init {
+    self = [super init];
+    return self;
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -28,16 +33,14 @@
     // Drawing code
 }
 */
-- (UIView *)showMenu:(NSString *)name withItems:(NSArray *)items atPosition:(CGRect)pos {
-    menuName = name;
+- (UIView *)showMenu:(NSArray *)items atPosition:(CGRect)pos {
     menuItems = [[NSArray alloc] initWithArray:items];
 
     //set origin
     
     CGRect newFrame = pos;
     newFrame.size.height = [menuItems count] * 44;
-    newFrame.size.width = (newFrame.size.width - 30);
-//    newFrame.origin = CGPointMake(pos.x, pos.y);
+    newFrame.size.width = (newFrame.size.width - 25);
     
     menuTableView = [[UITableView alloc] initWithFrame:newFrame style:UITableViewStylePlain];
     menuTableView.dataSource = self;
@@ -61,26 +64,13 @@
  
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault)
                                                    reuseIdentifier:@"cell"];
-    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
     cell.backgroundColor = [UIColor whiteColor];
     [cell.textLabel setText:[menuItems objectAtIndex:indexPath.row]];
     return cell;
 }
 - (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    selection = cell.textLabel.text;
-    // post notification that zone updated
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:menuName
-     object:self];
-
+    [delegate selectionReturned:[menuItems objectAtIndex:indexPath.row]];
     [menuTableView removeFromSuperview];
-    
-    
 }
 
 @end

@@ -8,13 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+@class dropDownMenu;
+
+@protocol dropDownMenu <NSObject>
+@required
+
+- (void)selectionReturned: (NSString *)selectedItem;
+
+@end
+
 @interface dropDownMenu : UIView <UITableViewDataSource, UITableViewDelegate> {
     UITableView *menuTableView;
     NSArray *menuItems;
 }
-@property (nonatomic, strong) NSString *selection;
-@property (nonatomic, strong) NSString *menuName;
 
-- (UIView *)showMenu:(NSString *)name withItems:(NSArray *)items atPosition:(CGRect)pos;
+@property (nonatomic, assign) id delegate;
+
+@property (nonatomic, strong) NSString *selection;
+
+- (UIView *)showMenu:(NSArray *)items atPosition:(CGRect)pos;
 
 @end

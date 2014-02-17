@@ -10,7 +10,9 @@
 // include the dropDownMenu class
 #import "dropDownMenu.h"
 
-@interface ddmViewController : UIViewController
+@interface ddmViewController : UIViewController <dropDownMenu> {
+    
+}
 
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UITextField *menuSelectedText;

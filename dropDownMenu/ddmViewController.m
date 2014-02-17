@@ -28,6 +28,7 @@
     menuSelectedText.leftViewMode = UITextFieldViewModeAlways;
     
     thisMenu = [[dropDownMenu alloc] init];
+    thisMenu.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,15 +40,11 @@
     NSArray *menuItems = [[NSArray alloc] initWithObjects:@"one",@"two",@"three",@"four",@"five", nil];
 
     // set the name for your menu
-    NSString *menuName = @"clickMe";
-    [self.view addSubview:[thisMenu showMenu:menuName withItems:menuItems atPosition:self.menuSelectedText.frame]];
-    
-    // add observer for receiving the selected menu item string
-    [[NSNotificationCenter defaultCenter] addObserverForName:menuName object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *notification) {
-        // do what you will with the returned selected menu item string
-        self.menuSelectedText.text = thisMenu.selection;
-    }];
-    
+    [self.view addSubview:[thisMenu showMenu:menuItems atPosition:self.menuSelectedText.frame]];
+}
+
+- (void)selectionReturned:(NSString *)selectedItem {
+    self.menuSelectedText.text = selectedItem;
 }
 
 @end
