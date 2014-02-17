@@ -12,20 +12,24 @@
 	<dict>
 		<key>2914945E-3815-4EF4-A8A6-B8EB4C28AF62</key>
 		<string>ssh://git.rwsdev.net/RWSDev/tactical-assassination-game.git</string>
+		<key>BEA27A51-2CF0-4A97-B549-7895EBD54715</key>
+		<string>ssh://github.com/ToxicSpark/dropDownMenu.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>appDev/rwsdev/dropDownMenu/dropDownMenu.xcodeproj/project.xcworkspace</string>
+	<string>dropDownMenu.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2914945E-3815-4EF4-A8A6-B8EB4C28AF62</key>
 		<string>../../../../..</string>
+		<key>BEA27A51-2CF0-4A97-B549-7895EBD54715</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://git.rwsdev.net/RWSDev/tactical-assassination-game.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2914945E-3815-4EF4-A8A6-B8EB4C28AF62</string>
+	<string>BEA27A51-2CF0-4A97-B549-7895EBD54715</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -33,6 +37,14 @@
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2914945E-3815-4EF4-A8A6-B8EB4C28AF62</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dropDownMenu</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BEA27A51-2CF0-4A97-B549-7895EBD54715</string>
 			<key>IDESourceControlWCCName</key>
 			<string>dropDownMenu</string>
 		</dict>
